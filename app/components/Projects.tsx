@@ -1,23 +1,22 @@
 'use client';
 
-import { FaLocationArrow } from 'react-icons/fa6';
-
 import { projectsData } from '@/data';
 import Image from 'next/image';
+import { IoMdArrowRoundForward } from 'react-icons/io';
 import { PinContainer } from './ui/3d-pin';
 
 const RecentProjects = () => {
   return (
-    <div className='py-20'>
+    <div id='projects' className='py-20'>
       <h1 className=' text-2xl font-bold text-center'>Projects</h1>
       <div className='flex flex-wrap items-center justify-center p-4 gap-10 mt-10'>
         {projectsData.map((item) => (
           <div
-            className='lg:min-h-[35rem] h-[25rem] flex items-center justify-center w-96'
+            className='lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]'
             key={item.id}
           >
             <PinContainer title='Visit' href={item.link}>
-              <div className='relative flex items-center justify-center w-96 overflow-hidden h-[20vh] lg:h-[30vh] mb-10'>
+              <div className='relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10'>
                 <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162D] '>
                   <Image src='/bg.png' alt='bg-img' width={200} height={250} />
                 </div>
@@ -26,7 +25,7 @@ const RecentProjects = () => {
                   alt='cover'
                   width={200}
                   height={250}
-                  className='z-10 absolute -bottom-10  rotate-6 w-80 h-56 rounded-lg'
+                  className='z-10 absolute -bottom-10  rotate-6 w-72 h-44 sm:w-80 sm:h-56 rounded-lg'
                 />
               </div>
 
@@ -66,10 +65,10 @@ const RecentProjects = () => {
                 </div>
 
                 <div className='flex justify-center items-center'>
-                  <p className='flex lg:text-xl md:text-xs text-sm text-purple'>
-                    Check Live Site
+                  <p className='flex lg:text-lg md:text-xs text-sm text-purple'>
+                    Live Demo
                   </p>
-                  <FaLocationArrow className='ms-3' color='#CBACF9' />
+                  <IoMdArrowRoundForward className=' ms-3 text-[#CBACF9]' />
                 </div>
               </div>
             </PinContainer>
