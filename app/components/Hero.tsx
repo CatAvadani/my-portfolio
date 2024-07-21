@@ -30,16 +30,16 @@ export const Hero = () => {
             className='h-24 w-24 rounded-full object-cover border-[0.15rem] border-violet-100 
             shadow-xl'
           />
-          <p className='text-center md:tracking-wider mt-4 font-light'>
+          <p className='text-center md:tracking-wider mt-4 font-medium'>
             Hi, I&apos;m Catalina, a Front-End Developer!
           </p>
           <TextGenerateEffect
             className='text-center text-[40px] p-8 '
-            words=' I love building Web user interfaces & digital products with focus on performance, using cutting-edge technologies like React( Next.js).'
+            words=' I love building User Interfaces & Digital Products with focus on performance, using cutting-edge technologies like React( Next.js).'
           />
           <a href='#about'>
             <MagicButton
-              title={'Show My Work'}
+              title={'My Work'}
               icon={
                 <IoMdArrowRoundForward className=' size-5 hover:translate-x-2 transition-all' />
               }

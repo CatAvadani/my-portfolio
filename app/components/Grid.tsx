@@ -1,7 +1,5 @@
-import React from 'react';
-
 const Grid = () => {
-  return <div>Grid</div>;
+  return <div className=' h-48'>Grid</div>;
 };
 
 export default Grid;

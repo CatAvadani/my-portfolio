@@ -12,6 +12,16 @@ export const TextGenerateEffect = ({
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(' ');
+
+  const highlightWords = [
+    'User',
+    'Interfaces',
+    '&',
+    'Digital',
+    'Products',
+    'React(Next.js).',
+  ];
+
   useEffect(() => {
     animate(
       'span',
@@ -29,11 +39,16 @@ export const TextGenerateEffect = ({
     return (
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
+          const isHighlight = highlightWords.includes(word);
           return (
             <motion.span
               key={word + idx}
               className={`${
-                idx > 17 ? 'text-purple' : 'dark:text-white text-black'
+                isHighlight
+                  ? ' text-highlight'
+                  : idx > 16
+                  ? ' text-purple italic text-2xl'
+                  : 'dark:text-white text-black'
               } opacity-0`}
             >
               {word}{' '}
@@ -45,7 +60,7 @@ export const TextGenerateEffect = ({
   };
 
   return (
-    <div className={cn('font-bold', className)}>
+    <div className={cn('font-semibold', className)}>
       <div className='mt-4'>
         <div className=' dark:text-white text-black text-2xl leading-snug tracking-wider'>
           {renderWords()}
