@@ -3,13 +3,21 @@
 import { projectsData } from '@/data';
 import Image from 'next/image';
 import { IoMdArrowRoundForward } from 'react-icons/io';
-import { PinContainer } from './ui/3d-pin';
+import { PinContainer } from './ui/Pin';
 
 const RecentProjects = () => {
   return (
     <div id='projects' className='py-20'>
-      <h1 className=' text-2xl font-bold text-center'>Projects</h1>
-      <div className='flex flex-wrap items-center justify-center p-4 gap-10 mt-10'>
+      <h1 className='text-2xl font-bold text-center'>Projects</h1>
+
+      <div className='w-full sm:w-[40rem] h-6 relative m-auto mt-2 '>
+        <div className='absolute inset-x-10 sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 sm:w-3/4 blur-sm' />
+        <div className='absolute inset-x-10 sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4 sm:w-3/4' />
+        <div className='absolute inset-x-20 sm:inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/2 sm:w-1/4 blur-sm' />
+        <div className='absolute inset-x-20 sm:inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/2 sm:w-1/4' />
+      </div>
+
+      <div className='flex flex-wrap items-center justify-center p-4 gap-10 mt-2'>
         {projectsData.map((item) => (
           <div
             className='lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]'
@@ -25,7 +33,7 @@ const RecentProjects = () => {
                   alt='cover'
                   width={200}
                   height={250}
-                  className='z-10 absolute -bottom-10  rotate-6 w-72 h-44 sm:w-80 sm:h-56 rounded-lg'
+                  className='z-10 absolute -bottom-10 rotate-6 w-72 h-44 sm:w-80 sm:h-56 rounded-lg'
                 />
               </div>
 
@@ -68,7 +76,7 @@ const RecentProjects = () => {
                   <p className='flex lg:text-lg md:text-xs text-sm text-purple'>
                     Live Demo
                   </p>
-                  <IoMdArrowRoundForward className=' ms-3 text-[#CBACF9]' />
+                  <IoMdArrowRoundForward className='ms-3 text-[#CBACF9]' />
                 </div>
               </div>
             </PinContainer>

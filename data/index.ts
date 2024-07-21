@@ -9,14 +9,13 @@ export const links = [
     hash: '#home',
   },
   {
-    name: 'About',
-    hash: '#about',
-  },
-  {
     name: 'Projects',
     hash: '#projects',
   },
-
+  {
+    name: 'Skills',
+    hash: '#skills',
+  },
   {
     name: 'Experience',
     hash: '#experience',
@@ -25,7 +24,40 @@ export const links = [
     name: 'Contact',
     hash: '#contact',
   },
-] as const;
+];
+
+export const slugs = [
+  'typescript',
+  'javascript',
+  'dart',
+  'java',
+  'react',
+  'flutter',
+  'android',
+  'html5',
+  'css3',
+  'nodedotjs',
+  'express',
+  'nextdotjs',
+  'prisma',
+  'amazonaws',
+  'postgresql',
+  'firebase',
+  'nginx',
+  'vercel',
+  'testinglibrary',
+  'jest',
+  'cypress',
+  'docker',
+  'git',
+  'jira',
+  'github',
+  'gitlab',
+  'visualstudiocode',
+  'androidstudio',
+  'sonarqube',
+  'figma',
+];
 
 export const experiencesData = [
   {
@@ -109,26 +141,4 @@ export const projectsData = [
     imageUrl: '/CalendarImg.png',
     link: 'https://github.com/CatAvadani/Calendar-Project',
   },
-];
-
-export const skillsData = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Next.js',
-  'Node.js',
-  'Svelte',
-  'Git',
-  'Tailwind',
-  'Figma',
-  'UX/UI',
-  'Agile Methodologies',
-  'Framer Motion',
-  'Kotlin',
-  'Android',
-  'Jetpack Compose',
-  'Room Database',
-  'Retrofit Library',
 ];
