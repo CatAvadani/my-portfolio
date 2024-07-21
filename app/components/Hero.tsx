@@ -6,7 +6,7 @@ import { TextGenerateEffect } from './ui/TextGenerateEffect';
 
 export const Hero = () => {
   return (
-    <div className=' pb-20 pt-36'>
+    <div className=' pb-5 pt-36'>
       <Spotlight
         className=' -top-40 -left-10 md:-left-32 md:-top-20 h-screen'
         fill='pink'
@@ -37,7 +37,7 @@ export const Hero = () => {
             className='text-center text-[40px] p-8 '
             words=' I love building User Interfaces & Digital Products with focus on performance, using cutting-edge technologies like React( Next.js).'
           />
-          <a href='#about'>
+          <a href='#projects'>
             <MagicButton
               title={'My Work'}
               icon={
