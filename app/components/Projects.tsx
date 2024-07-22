@@ -11,7 +11,7 @@ const RecentProjects = () => {
     <div id='projects' className='py-20'>
       <h1 className='text-2xl font-bold text-center'>Projects</h1>
 
-      <Underline />
+      <Underline className='mb-2' />
 
       <div className='flex flex-wrap items-center justify-center p-4 gap-10 mt-2'>
         {projectsData.map((item) => (
