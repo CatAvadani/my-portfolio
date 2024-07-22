@@ -167,4 +167,10 @@ export const socialMedia = [
     img: '/link.svg',
     url: 'https://www.linkedin.com/in/catalinaava09/',
   },
+
+  {
+    id: 5,
+    img: '/fb.svg',
+    url: 'https://www.facebook.com/catalina.avadani/',
+  },
 ];
