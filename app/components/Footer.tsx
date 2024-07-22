@@ -6,13 +6,13 @@ import MagicButton from './ui/MagicButton';
 const Footer = () => {
   return (
     <footer id='contact' className='w-full pt-20 pb-10 relative'>
-      <div className='w-full absolute left-0 -bottom-72 min-h-96'>
+      <div className='w-full absolute left-0 bottom-10 '>
         <Image
           src='/footer-grid.svg'
           alt='footer-grid'
           width={1920}
           height={50}
-          className='w-full h-full opacity-50'
+          className='w-full h-full opacity-50 '
         />
       </div>
       <div className='flex flex-col items-center gap-4'>
@@ -32,12 +32,9 @@ const Footer = () => {
         </a>
       </div>
       <div className='flex mt-16 md:flex-row flex-col justify-between items-center gap-4'>
-        <p className='text-sm md:text-base font-light'>
+        <p className='text-sm md:text-base font-light text-white-200 p-0'>
           Copyright
-          <span className='text-purple'>
-            {' '}
-            © {new Date().getFullYear()} Catalina Avadani
-          </span>
+          <span> © {new Date().getFullYear()} Catalina Avadani</span>
         </p>
         <div className='flex items-center justify-center gap-6 md:gap-3'>
           {socialMedia.map((item) => (
