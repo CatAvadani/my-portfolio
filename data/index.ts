@@ -1,7 +1,6 @@
 import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
-import { FaReact } from 'react-icons/fa';
-import { LuGraduationCap } from 'react-icons/lu';
+import { FaAndroid, FaReact } from 'react-icons/fa';
 
 export const links = [
   {
@@ -61,19 +60,27 @@ export const slugs = [
 
 export const experiencesData = [
   {
+    title: 'Front End Developer Student',
+    location: 'Medieinstitutet, Gothenburg',
+    description:
+      'Currently studying Front End Development, focusing on modern web technologies and practices.',
+    icon: React.createElement(FaReact),
+    date: '2023 - 2024',
+  },
+  {
     title: 'Senior Casino Associate',
     location: 'Gothenburg, Sweden',
     description:
       'Ensured a positive customer experience, oversaw gaming activities, resolved disputes, managed financial transactions, and ensured compliance with regulatory requirements.',
-    icon: React.createElement(LuGraduationCap),
-    date: '2018 - present',
+    icon: React.createElement(CgWorkAlt),
+    date: '2018 - Jun 2024',
   },
   {
     title: 'Android Developer - Internship',
     location: 'Stendahls, Gothenburg',
     description:
       'Completed a two-month internship focused on Android development, gaining hands-on experience with technologies such as Android Studio, Kotlin, Jetpack Compose, Room Database, Git, and Retrofit Library.',
-    icon: React.createElement(CgWorkAlt),
+    icon: React.createElement(FaAndroid),
     date: 'Okt - Dec 2022',
   },
   {
@@ -81,7 +88,7 @@ export const experiencesData = [
     location: 'USA',
     description:
       "Ensured that casino games were managed in accordance with the company's policies and regulations. Oversaw players and dealers, reviewed cash-to-chip exchanges, resolved conflicts professionally, and handled personnel-related issues, including staff scheduling.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(CgWorkAlt),
     date: '2004 - 2017',
   },
 ] as const;
