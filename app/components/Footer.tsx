@@ -1,7 +1,6 @@
 import { socialMedia } from '@/data';
 import Image from 'next/image';
-import { IoMdArrowRoundForward } from 'react-icons/io';
-import MagicButton from './ui/MagicButton';
+import Contact from './Contact';
 
 const Footer = () => {
   return (
@@ -21,15 +20,7 @@ const Footer = () => {
           let&apos;s build something great{' '}
           <span className='text-purple'>together</span>!
         </p>
-        <a href='mailto:catalina_ava@yahoo.com'>
-          <MagicButton
-            title="Let's Connect"
-            position='right'
-            icon={
-              <IoMdArrowRoundForward className='size-5 hover:translate-x-2 transition-all' />
-            }
-          />
-        </a>
+        <Contact />
       </div>
       <div className='flex mt-16 md:flex-row flex-col justify-between items-center gap-4'>
         <p className='text-sm md:text-base font-light text-white-200 p-0'>
