@@ -65,7 +65,7 @@ export const experiencesData = [
     description:
       'Currently studying Front End Development, focusing on modern web technologies and practices.',
     icon: React.createElement(FaReact),
-    date: '2023 - 2024',
+    date: '2023 - 2025',
   },
   {
     title: 'Senior Casino Associate',
