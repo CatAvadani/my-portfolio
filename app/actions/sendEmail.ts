@@ -2,10 +2,13 @@
 
 import React from 'react';
 import { Resend } from 'resend';
-import ContactFormEmail from '../components/ContactFormEmail';
 import { getErrorMessage, validateString } from '../../data/validation';
+import ContactFormEmail from '../components/ContactFormEmail';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+if (!process.env.RESEND_API_KEY) {
+  throw new Error('RESEND_API_KEY environment variable is not set');
+}
 
 export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get('senderEmail');
