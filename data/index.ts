@@ -99,7 +99,7 @@ export const projectsData = [
     title: 'My Nutrition Plan',
     description:
       '"My Nutrition Plan" is a web application that allows users to search for recipes and manage their own nutrition plans.',
-    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/fm.svg'],
+    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/fm.svg'],
     imageUrl: '/MyNutritionPlan.png',
     link: 'https://my-nutrition-plan.vercel.app/',
   },
@@ -114,37 +114,38 @@ export const projectsData = [
   },
   {
     id: 3,
+    title: 'Weather Watch',
+    description:
+      'Weather Watch is a web application that allows users to search for weather information in any city around the world.',
+    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/c.svg'],
+    imageUrl: '/weather-img.png',
+    link: 'https://weather-watch-bice.vercel.app/',
+  },
+  {
+    id: 4,
     title: 'Netflix Rip Off',
     description:
       'The Netflix Rip Off is designed to replicate the core functionalities of a movie platform like Netflix, and is intended to showcase not only our technical skills but also to cultivate an agile development mindset.',
-    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/c.svg'],
+    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/c.svg'],
     imageUrl: '/NetflixRipOff.png',
     link: 'https://netflix-rip-off.vercel.app/',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Next Design',
     description:
       'This project focuses on building a webshop using React, NextJS, Typescript, and ChakraUI. Named NEXT DESIGN, the webshop’s aesthetic draws inspiration from the established interior design store, NORDIC NEST. ',
-    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/c.svg'],
+    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/c.svg'],
     imageUrl: '/NextDesign.png',
     link: 'https://nextjs-webbshop-ts-chaos.vercel.app',
   },
-  {
-    id: 5,
-    title: 'Pirates of the Caribbean',
-    description:
-      '"Pirates of the Caribbean - Cursed Seas" is a basic interactive adventure game implemented in JavaScript. ',
-    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/three.svg', '/gsap.svg'],
-    imageUrl: '/PiratesShip.png',
-    link: 'https://catavadani.github.io/Pirates-of-the-Caribbean/',
-  },
+
   {
     id: 6,
     title: 'Calendar',
     description:
       'Users can easily create and schedule todos, while a visually appealing interface showcases a todo list on the left and an interactive calendar on the right.',
-    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/three.svg', '/gsap.svg'],
+    iconLists: ['/next.svg', '/ts.svg'],
     imageUrl: '/CalendarImg.png',
     link: 'https://github.com/CatAvadani/Calendar-Project',
   },
@@ -154,13 +155,16 @@ export const socialMedia = [
   {
     id: 1,
     img: '/git.svg',
+    url: 'https://github.com/CatAvadani',
   },
   {
     id: 2,
     img: '/twit.svg',
+    url: '',
   },
   {
     id: 3,
     img: '/link.svg',
+    url: 'https://www.linkedin.com/in/catalinaava09/',
   },
 ];

@@ -3,6 +3,7 @@ interface MagicButtonProps {
   icon: React.ReactNode;
   position: string;
   handleClick?: () => void;
+  type?: 'submit' | 'button';
   otherClasses?: string;
 }
 
@@ -11,6 +12,7 @@ const MagicButton = ({
   icon,
   position,
   handleClick,
+  type,
   otherClasses,
 }: MagicButtonProps) => {
   return (
