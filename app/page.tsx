@@ -1,5 +1,6 @@
 import { links } from '@/data';
 import { FaHome } from 'react-icons/fa';
+import Experience from './components/Experience';
 import Footer from './components/Footer';
 import { Hero } from './components/Hero';
 import { Icons } from './components/Icons';
@@ -20,6 +21,7 @@ export default function Home() {
         <Hero />
         <Icons />
         <Projects />
+        <Experience />
         <Footer />
       </div>
     </main>
