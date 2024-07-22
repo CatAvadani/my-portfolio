@@ -1,5 +1,6 @@
 import { links } from '@/data';
 import { FaHome } from 'react-icons/fa';
+import Footer from './components/Footer';
 import { Hero } from './components/Hero';
 import { Icons } from './components/Icons';
 import Projects from './components/Projects';
@@ -19,6 +20,7 @@ export default function Home() {
         <Hero />
         <Icons />
         <Projects />
+        <Footer />
       </div>
     </main>
   );
